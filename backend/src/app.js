@@ -40,6 +40,15 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+// Root route
+app.get('/', (req, res) => {
+  res.json({ 
+    message: '✅ ShopElite API is running!',
+    version: '1.0.0',
+    timestamp: new Date()
+  });
+});
+
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/products', require('./routes/productRoutes'));
