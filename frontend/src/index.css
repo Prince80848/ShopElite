@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @layer base {
   :root {
     --color-bg: #f1f5f9;        /* slate-100 */
