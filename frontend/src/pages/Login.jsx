@@ -113,13 +113,6 @@ export default function Login() {
             </button>
           </form>
 
-          {/* Demo credentials */}
-          <div className="mt-4 p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl text-xs">
-            <p className="text-blue-300 font-medium mb-1">Demo Credentials:</p>
-            <p className="text-slate-400">User: user@shopelite.com / User@123</p>
-            <p className="text-slate-400">Admin: admin@shopelite.com / Admin@123</p>
-          </div>
-
           <p className="text-center text-slate-400 text-sm mt-6">
             Don't have an account?{' '}
             <Link to={`/register${redirect !== '/' ? `?redirect=${redirect}` : ''}`} className="text-slate-900 hover:text-slate-700 font-medium">
